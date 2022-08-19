@@ -663,7 +663,22 @@ footer>div:last-child{
 .section-3>button {
     right: 0;
 }
+footer>div:last-child {
+    flex-direction: column;
+    gap: 20px;
+}
+.f-logo{
+    position: static;
+}
 
+.social-media{
+    gap: 90px;
+
+}
+
+.social-media>img{
+    height:22px ;
+}
 
 }
 
@@ -729,13 +744,7 @@ footer>div:last-child{
     footer>div:first-child>h4 {
         font-size: 14px;
     }
-    footer>div:last-child {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .f-logo{
-        position: static;
-    }
+    
 }
 
 
