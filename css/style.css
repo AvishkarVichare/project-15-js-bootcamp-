@@ -221,6 +221,7 @@ nav{
     align-items: center;
     gap: 150px;
     font-family: 'Poppins';
+    justify-content: center;
     font-weight: 900;
     padding: 0 300px;
     
@@ -477,4 +478,281 @@ footer>div:last-child{
 .social-media{
     display: flex;
     gap: 45px;
+}
+
+
+.burger{
+    display: none;
+    gap: 3px;
+    flex-direction: column;
+}
+
+.burger>div{
+    height: 4px;
+    width: 25px;
+    background-color:#ff0000;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:1330px) {
+    .nav-list{
+        margin-right: 0;
+    }
+    .hero-left>img {
+        height: 400px;
+        left: 0;
+    }
+
+    .hero-right>h4 {
+        font-size: 20px;
+    }
+
+    .hero-right>h1 {
+        font-size: 50px;
+    }
+
+    .hero-right>p {
+        width: fit-content;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    .analytics {
+        padding: 0;
+    }
+
+    .card{
+        padding: 30px;
+    }
+
+    .card>h4 {
+        font-size: 20px;
+    }
+
+    .card>p {
+        width: 215px;
+    }
+
+    .card:last-child>img {
+        height: 50px;
+    }
+
+    .card:first-child>img {
+        height: 55px;
+    }
+
+    .a-left>h4 {
+        font-size: 18px;
+    }
+    .a-left>h1 {
+        font-size: 115px;
+    }
+    .sec-2-card>img {
+        width: 400px;
+    }
+    .sec-2-card>h4 {
+        font-size: 20px;
+    }
+    .sec-2-card>a {
+        font-size: 16px;
+    }
+
+    .section-3 {
+        width: 800px;
+    }
+    .s-3-left>h1 {
+        font-size: 33px;
+    }
+.section-2{
+    padding: 0 70px;
+}
+}
+
+
+
+@media screen and (max-width:1023px) {
+
+    .burger{
+        display: flex;
+    }
+    nav{
+        padding: 30px 50px;
+    }
+    .nav-list>li{
+        display: none;
+
+    }
+    .nav-list{
+        align-items: center;
+        margin-right: 0;
+    }
+    .hero-left>img {
+        height: 350px;
+        padding: 0;
+    }
+    .hero-right>h1 {
+        font-size: 33px;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .hero-right>h4 {
+        font-size: 17px;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        padding: 20px;
+    
+    }
+
+    .section-1::before{
+        height: 1200px;
+        width: 500px;
+    }
+
+    .analytics{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .a-left{
+        left: 0;
+    }
+
+    .section-2{
+        padding: 0 50px;
+        margin-top: 40px;
+    }
+    .sec-2-cards{
+        display: block;
+        margin: auto;
+    }
+    .sec-2-card{
+        margin-top: 20px;
+    }
+
+    .section-3{
+        width: auto;
+        margin: 0 50px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+
+.s-3-left>h1 {
+    width: fit-content;
+    padding: 15px 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.s-3-left>p {
+    width: fit-content;
+    padding: 15px 50px;
+    text-align: center;
+}
+
+
+.section-3>button {
+    right: 0;
+}
+
+
+}
+
+
+@media screen and (max-width:615px) {
+
+    .hero-section{
+        flex-direction: column  ;
+        padding: 0 40px;
+    }
+
+    .section-1{
+    }
+
+    .analytics{
+        gap: 0px;
+    }
+    .section-1::before{
+        width: 60%;
+    }
+    .a-right{
+        display: block;
+    }
+    .a-card{
+        width: 100%;
+        margin-top: 20px;
+    }   
+
+    .section-2{
+        padding: 0 40px;
+    }
+    .sec-2-head{
+        flex-direction: column;
+    }
+    .sec-2-head>div>h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .sec-2-head>div>p {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .sec-2-card>img {
+        width: 300px;
+        padding: 30px 25px;
+    }
+
+    .section-3{
+        margin: 0 40px;
+    }
+    .s-3-left>h1 {
+        padding: 0  ;
+        margin-bottom: 20px;
+    }
+    .s-3-left>p {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    footer>div:first-child {
+        gap: 20px;
+    }
+    footer>div:first-child>h4 {
+        font-size: 14px;
+    }
+    footer>div:last-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .f-logo{
+        position: static;
+    }
+}
+
+
+
+@media screen and (max-width:340px) {
+    .logo>img{
+        height: 30px;
+    }
+    nav{
+        padding: 18px 30px;
+    }
+    .hero-left>img {
+        height: 250px;
+    }
+
+    .sec-2-card>img {
+        width: 250px;
+    }
+
 }
